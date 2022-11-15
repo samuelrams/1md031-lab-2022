@@ -1,17 +1,20 @@
 <!DOCTYPE HTML>
 <html lang="en">
    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
        <title>Sampes sunkburgare</title>
        <meta charset="utf-8"/>
    </head>
    <body>
-    <header>
-        <h1>
-            Välkommen till Sampes Sunkburgare!
-        </h1>
+    <header>  
+        <img src ="https://images.unsplash.com/photo-1570838987781-cfb11bb0a4e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" id="headerimage"> 
+        <h1 id = "pagetitle">
+            Välkommen till Sampinator's Burgers!
+        </h1> 
     </header>
+   
     <main>
-        <section>
+        <section id="burgersection">
             <div>
             <h3>
                 Välj din burgare
@@ -20,56 +23,60 @@
                 Vad är du sugen på? Välj din burgare här!
             </p>
             </div>
-            <div style="display: inline-block";>
-                <center>
-                <h3>
+            <div class="burgerwrapper">
+            <div class ="burgeritem">
+                
+                <h3 class="burgertitle">
                     McNils
                 </h3>
             
-                <img src = "https://insanelygoodrecipes.com/wp-content/uploads/2020/10/Hamburger-with-Sesame-Seeds-Cheese-and-Veggies-500x375.png" style="width: 180px"; >
-            </center>
+                <img src = "https://insanelygoodrecipes.com/wp-content/uploads/2020/10/Hamburger-with-Sesame-Seeds-Cheese-and-Veggies-500x375.png" class="burgerimage" id="mcnilsimage" >
+           
 
-                <ul>
+                <ul class="ingridientlist">
                     
-                    <li>Maxad med gluten</li>
-                    <li>Kan innehålla tomat</li>
+                    <li>Maxad med <span class="ingridient">gluten</span></li>
+                    <li>Kan innehålla <span class="ingridient">tomat</span></li>
                     <li>Rekommenderas av Nils</li>
                 </ul>
            
             </div>
 
-            <div style="display: inline-block";>
-                <center>
-                <h3>
+            <div class ="burgeritem">
+               
+                <h3 class="burgertitle">
                     McIsak
                 </h3>
            
-                <img src = "https://assets.biggreenegg.eu/app/uploads/2019/03/28145521/topimage-classic-hamburger-2019m04-800x534-600x401.jpg" style="width:   200px"; >
-            </center>
-                <ul>
+                <img src = "https://assets.biggreenegg.eu/app/uploads/2019/03/28145521/topimage-classic-hamburger-2019m04-800x534-600x401.jpg" class="burgerimage" id="mcisakimage" >
+           
+                <ul class="ingridientlist">
                     <li>Exklusiv</li>
-                    <li>Inte vegetarisk för fem öre</li>
-                    <li>Serveras med is</li>
+                    <li><span class="ingridient">Inte vegetarisk</span> för fem öre</li>
+                    <li>Serveras med <span class="ingridient">is</span></li>
                 </ul>
             </div>
-            <div style="display: inline-block";>
-               <center>
-                 <h3>
+            <div class ="burgeritem">
+             
+                 <h3 class="burgertitle">
                     
                     McFelix
                 </h3>
             
-                <img src = "https://media.istockphoto.com/photos/ugly-burger-picture-id176601160?k=20&m=176601160&s=612x612&w=0&h=vhZ-FIDdN4abXJfnB6kQX9RwcoaEPju9nuj00bUvZvM=" style="width: 200px"; >
-            </center>
-                <ul>
+                <img src = "https://www.nj.com/resizer/IKzHhfYmO_TN3M-SpmuEuzWZbGU=/arc-anglerfish-arc2-prod-advancelocal/public/SWZEWO7EQFCNTDOPCOOON62CEE.JPG" class="burgerimage" id="mcfeliximage" >
+           
+                <ul class="ingridientlist">
                     <li>Gratis</li>
                     <li>Utgången</li>
-                    <li>Vegansk</li>
+                    <li><span class="ingridient">Vegansk</span></li>
                 </ul>
+            </div>
             </div>
            
         </section>
         <section id="contact">
+            <h3>Delivery information</h3>
+            <p></p>
             <form>
                 <p>
                     <label for="fullname">Full name</label><br>
@@ -116,11 +123,11 @@
                  </p>
                  </div>
             </form>
-                <button type="submit">
-                    <img src ="https://cdn-icons-png.flaticon.com/512/130/130066.png" style="width: 20px;">
-                    Place my order!
-                </button>
         </section>
+        <button type="submit">
+            <img src ="https://cdn-icons-png.flaticon.com/512/130/130066.png" id="bikeicon">
+            <span id="ordertext">Place my order!</span>
+        </button>
     </main>
     <hr>
     <footer>

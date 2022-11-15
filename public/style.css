@@ -1,1 +1,119 @@
 /*empty*/
+
+body {
+    font-family: arial;
+    font-size: 1.2rem;
+    background-color: #c1f3f5;
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    height: 250px;
+    overflow: hidden;
+
+}
+
+#headerimage {
+    position: relative;
+    top:80%;
+    height: auto;
+    width: 100%;
+    opacity: 0.4;
+}
+
+
+#pagetitle {
+position: absolute;
+margin: 0px;
+
+ 
+}
+
+.ingridient{
+font-weight: bold;
+}
+
+button:hover, #payment:hover, #man:hover, #woman:hover, #other:hover, #not:hover {
+    background-color:antiquewhite;
+    cursor:pointer;
+}
+
+section {
+    margin: 20px;
+    padding: 10px 30px;
+    
+}
+
+#burgersection {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+
+#contact {
+    border: 2px solid black;
+    text-align: left;
+}
+
+button{
+    display:flex;
+    margin: 0px 20px 10px 50px;
+    font-size: 16px;
+    align-self: flex-start;
+
+
+}
+
+.burgerwrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    
+}
+
+
+.burgeritem {
+    justify-items: center;
+    padding: 15px;
+    
+   
+
+}
+
+.burgertitle {
+    justify-content:;
+}
+
+.burgerlist {
+    justify-content: ;
+}
+
+.burgerimage {
+    width: 180px;
+    justify-content:;
+    
+}
+
+#mcisakimage {
+    width: 200px;
+}
+
+#bikeicon {
+    width: 20px;
+    margin-right: 4px;
+    margin-bottom:3px;
+    margin-top: 4px;
+}
+
+#ordertext {
+    margin-top: 5px;
+}
+
+li {
+    text-align: left;
+}
