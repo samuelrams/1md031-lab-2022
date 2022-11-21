@@ -1,137 +1,17 @@
-<!DOCTYPE HTML>
-<html lang="en">
-   <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-       <title>Sampes sunkburgare</title>
-       <meta charset="utf-8"/>
-   </head>
-   <body>
-    <header>  
-        <img src ="https://images.unsplash.com/photo-1570838987781-cfb11bb0a4e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" id="headerimage"> 
-        <h1 id = "pagetitle">
-            Välkommen till Sampinator's Burgers!
-        </h1> 
-    </header>
-   
-    <main>
-        <section id="burgersection">
-            <div>
-            <h3>
-                Välj din burgare
-            </h3>
-            <p>
-                Vad är du sugen på? Välj din burgare här!
-            </p>
-            </div>
-            <div class="burgerwrapper">
-            <div class ="burgeritem">
-                
-                <h3 class="burgertitle">
-                    McNils
-                </h3>
-            
-                <img src = "https://insanelygoodrecipes.com/wp-content/uploads/2020/10/Hamburger-with-Sesame-Seeds-Cheese-and-Veggies-500x375.png" class="burgerimage" id="mcnilsimage" >
-           
-
-                <ul class="ingridientlist">
-                    
-                    <li>Maxad med <span class="ingridient">gluten</span></li>
-                    <li>Kan innehålla <span class="ingridient">tomat</span></li>
-                    <li>Rekommenderas av Nils</li>
-                </ul>
-           
-            </div>
-
-            <div class ="burgeritem">
-               
-                <h3 class="burgertitle">
-                    McIsak
-                </h3>
-           
-                <img src = "https://assets.biggreenegg.eu/app/uploads/2019/03/28145521/topimage-classic-hamburger-2019m04-800x534-600x401.jpg" class="burgerimage" id="mcisakimage" >
-           
-                <ul class="ingridientlist">
-                    <li>Exklusiv</li>
-                    <li><span class="ingridient">Inte vegetarisk</span> för fem öre</li>
-                    <li>Serveras med <span class="ingridient">is</span></li>
-                </ul>
-            </div>
-            <div class ="burgeritem">
-             
-                 <h3 class="burgertitle">
-                    
-                    McFelix
-                </h3>
-            
-                <img src = "https://www.nj.com/resizer/IKzHhfYmO_TN3M-SpmuEuzWZbGU=/arc-anglerfish-arc2-prod-advancelocal/public/SWZEWO7EQFCNTDOPCOOON62CEE.JPG" class="burgerimage" id="mcfeliximage" >
-           
-                <ul class="ingridientlist">
-                    <li>Gratis</li>
-                    <li>Utgången</li>
-                    <li><span class="ingridient">Vegansk</span></li>
-                </ul>
-            </div>
-            </div>
-           
-        </section>
-        <section id="contact">
-            <h3>Delivery information</h3>
-            <p></p>
-            <form>
-                <p>
-                    <label for="fullname">Full name</label><br>
-                    <input type="text" id = "fullname" name ="fn" required="required" placeholder="First- and Last name">
-                </p>
-                <p>
-                    <label for="email">E-mail</label><br>
-                    <input type="email" id = "email" name ="em" required="required" placeholder="E-mail adress">
-                </p>
-                <p>
-                    <label for="street">Street</label><br>
-                    <input type="text" id = "street" name ="st" required="required" placeholder="Street name">
-                </p>
-                <p>
-                    <label for="house">House</label><br>
-                    <input type="number" id = "house" name ="ho" required="required" placeholder="House number">
-                </p>
-                <p>
-                    <label for="payment">Payment Options</label><br>
-                    <select id="payment" name="pa">
-                        <option>Swish</option>
-                        <option selected="selected">Natura</option>
-                        <option>Guld</option>
-                        <option>Debit</option>
-                    </select>
-                 </p>
-                 <div>
-                 <p>
-                   
-                        <label>Gender</label><br>
-                        
-                            <input type="radio" id="woman" name="drone" value="woman" checked>
-                            <label for="woman">Woman</label><br>
-                       
-                            <input type="radio" id="man" name="drone" value="man" checked>
-                            <label for="man">Man</label><br>
-                       
-                            <input type="radio" id="other" name="drone" value="otherr" checked>
-                            <label for="other">Other</label><br>
-                        
-                            <input type="radio" id="not" name="drone" value="not" checked>
-                            <label for="not">Do not wish to state</label>
-                             
-                 </p>
-                 </div>
-            </form>
-        </section>
-        <button type="submit">
-            <img src ="https://cdn-icons-png.flaticon.com/512/130/130066.png" id="bikeicon">
-            <span id="ordertext">Place my order!</span>
-        </button>
-    </main>
-    <hr>
-    <footer>
-        &COPY; 2022 Sampes Burgare Inc.
-    </footer>
-   </body>
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>

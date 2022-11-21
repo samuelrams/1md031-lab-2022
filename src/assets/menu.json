@@ -1,0 +1,36 @@
+[
+    {
+        "name": "McNils",
+        "burgerPrice": 139,
+        "img": "https://insanelygoodrecipes.com/wp-content/uploads/2020/10/Hamburger-with-Sesame-Seeds-Cheese-and-Veggies-500x375.png",
+        "attribute1": "Passar den hungrige",
+        "attribute2": "Svenskt kött",
+        "attribute3": "Rekommenderas av Nils",
+        "laktos": true,
+        "gluten": true
+        
+    }
+    ,
+    {
+        "name": "McIsak",
+        "burgerPrice": 149,
+        "img": "https://assets.biggreenegg.eu/app/uploads/2019/03/28145521/topimage-classic-hamburger-2019m04-800x534-600x401.jpg",
+        "attribute1": "Exklusiv",
+        "attribute2": "Inspirerad av New York",
+        "attribute3": "Serveras med is",
+        "laktos": true,
+        "gluten": false
+
+    }
+,
+    {
+        "name": "McFelix",
+        "burgerPrice": 89,
+        "img": "https://media.istockphoto.com/id/185211336/photo/hamburger.jpg?s=612x612&w=0&k=20&c=4XzYTUjiqMebtRaGEjfUP9G38Pa5sKf2I4xM7J_EXBg=",
+        "attribute1": "Ett enklare alternativ",
+        "attribute2": "Bäst före-datum passerat",
+        "attribute3": "Vegansk",
+        "laktos": false,
+        "gluten": true
+    }
+]

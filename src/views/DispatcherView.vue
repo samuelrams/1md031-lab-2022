@@ -1,10 +1,26 @@
 <template>
+   
     <div id="orders">
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+          <b>Order ID:</b> #{{order.orderId}}:
+          <div id="burgerItemList" v-for="(item) in order.orderItems" v-bind:key="'item'+key">
+            <div v-for="(amount, name) in item" v-bind:key="'name'+key">
+           <p id ="burgeritems" v-if="amount!=0">
+            {{name}}: {{amount}}
+          </p>
+           </div>
+          </div>
+          <div id="personalInfo">
+          <i><b>{{order.details.name}}</b> 
+          ({{order.details.email}}, 
+          {{order.details.gender}}, 
+          {{order.details.payment}})</i>
+          <hr>
+          </div>
+
         </div>
-        <button v-on:click="clearQueue">Clear Queue</button>
+        <button v-on:click="clearQueue" id="clearbutton">Clear Queue</button>
       </div>
       <div id="dots" v-bind:style="{ background: 'url(' + require('../../public/img/polacks.jpg')+ ')' }">
           <div v-for="(order, key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
@@ -37,6 +53,7 @@
   </script>
   <style>
   #orderList {
+    text-align:left;
     top:1em;
     left:1em;
     position: absolute;
@@ -63,6 +80,39 @@
     width:20px;
     height:20px;
     text-align: center;
+  }
+
+  #clearbutton {
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+
+  #clearbutton:hover {
+    background-color: rgb(223, 186, 186);
+    color: white;
+    transition: 0.2s;
+    border: 2px solid rgb(128, 0, 41);
+    
+  }
+
+  #name {
+    font-weight: bold; 
+  }
+
+  #burgeritems {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  #burgerItemList {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #personalInfo{
+    font-size: 16px;
+    margin-top: 10px;
   }
   </style>
   
