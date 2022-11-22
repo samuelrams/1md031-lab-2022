@@ -211,8 +211,8 @@ export default {
 
 @font-face {
   font-family: "borgens-burl";
-  src: url('/Users/samuelram/Library/Fonts/Borgens Burlesque.ttf');
-  src: url('/Users/samuelram/Library/Fonts/Borgens Burlesque.ttf') format('truetype');
+  src: url('/src/assets/Fonts/Borgens Burlesque.ttf');
+  src: url('/src/assets/Fonts/Borgens Burlesque.ttf') format('truetype');
 }
   
   body {
@@ -391,6 +391,7 @@ footer {
   height: 600px;
   width: 1000px;
   overflow: scroll;
+  border: 2px solid white;
   
 }
 #map {
